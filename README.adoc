@@ -8,20 +8,20 @@ projects: [spring-boot]
 :project_id: gs-convert-jar-to-war
 :spring_boot_docs: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle
 
-Spring Boot comes with two powerful plugins:
+Spring Boot附带两个功能强大的插件:
 
 * `spring-boot-gradle-plugin`
 * `spring-boot-maven-plugin`
 
-They both essentially have feature parity and provide the ability to run Spring Boot apps from the command line as well as bundle up runnable JARs. This subject is mentioned in almost every guide at the execution phase towards the end.
+他们本质上都有平等的功能，即提供从命令行运行Spring Boot应用程序和以及可执行jar包的能力。几乎每一个指南最后执行阶段都提到了这个主题。
 
-A popular subject is that many people still wish to generate WAR files to be deployed inside containers. Both of these plugins support that as well. Essentially, you have to reconfigure your project to produce a WAR file and declare the embedded container dependencies as "provided". This ensures that the relevant embedded container dependencies aren't included in the WAR file.
+一个受欢迎的主题是，许多人仍然希望生成用于部署在容器中的WAR文件。这两个插件都支持这一点。本质上，您必须重新配置项目以生成WAR文件，并将嵌入式容器依赖声明为“提供”。这确保了相关的嵌入式容器依赖项不包含在WAR文件中。
 
-For detailed steps on how to configure your application to create a WAR file for your container, please see:
+有关如何配为你的容器置应用程序建WAR文件的详细步骤，请参见：
 
 * {spring_boot_docs}/#build-tool-plugins-maven-packaging[Packaging executable jar and war files with Maven]
 * {spring_boot_docs}/#build-tool-plugins-gradle-packaging[Packaging executable jar and war files with Gradle]
 
-NOTE: Spring Boot operates on servlet 3.0 spec containers.
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+NOTE: Spring Boot在servlet 3规范容器上运行。
+include::https://raw.githubusercontent.com/webGoBetter/getting-started-macros/master/footer.adoc[]
 
